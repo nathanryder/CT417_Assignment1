@@ -1,6 +1,7 @@
 package com.gmail.nathanryder16.CT417_Assignment1;
 
 import lombok.Getter;
+import lombok.Setter;
 
 import java.util.Date;
 import java.util.List;
@@ -10,7 +11,7 @@ public class Student {
     private @Getter String name;
     private @Getter int age;
     private @Getter Date dateOfBirth;
-    private @Getter String id;
+    private @Getter @Setter String id;
     private @Getter List<Course> courses;
     private @Getter List<Module> modules;
     private String username;
@@ -24,6 +25,14 @@ public class Student {
     public String getUsername() {
         username = name + age;
         return username;
+    }
+
+    public void addCourse(Course course) {
+        courses.add(course);
+    }
+
+    public void addModule(Module module) {
+        modules.add(module);
     }
 
 }

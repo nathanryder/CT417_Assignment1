@@ -7,13 +7,21 @@ import java.util.List;
 public class Module {
 
     private @Getter String name;
-    private @Getter int id;
+    private @Getter String id;
     private @Getter List<Student> students;
     private @Getter List<Course> courses;
 
-    public Module(String name, int id) {
+    public Module(String name, String id) {
         this.name = name;
         this.id = id;
+    }
+
+    public void addStudent(Student student) {
+        students.add(student);
+    }
+
+    public void addCourse(Course course) {
+        courses.add(course);
     }
 
 }
