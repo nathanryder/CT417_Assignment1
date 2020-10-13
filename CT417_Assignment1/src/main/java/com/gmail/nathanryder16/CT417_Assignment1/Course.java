@@ -19,4 +19,8 @@ public class Course {
         this.endDate = endDate;
     }
 
+    public void addModule(Module module) {
+        modules.add(module);
+    }
+
 }
