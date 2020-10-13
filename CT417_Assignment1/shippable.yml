@@ -1,0 +1,12 @@
+language: java
+
+jdk:
+  - openjdk11
+
+after_success:
+  - mvn test
+
+notifications:
+  email:
+    recipients:
+      - nathanryder16@gmail.com
