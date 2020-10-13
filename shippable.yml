@@ -4,7 +4,7 @@ jdk:
   - openjdk11
 
 after_success:
-  - mvn test
+  - mvn -f CT417_Assignment1/pom.xml package
 
 notifications:
   email:
